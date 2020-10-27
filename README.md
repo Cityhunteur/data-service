@@ -8,25 +8,21 @@
 * Docker Compose >= 1.27.0
 * Go >= 1.15
 
-## High Level Design
-
-
 ## Build
 
-```
+```shell
 make build
 ```
 
-
 ## Test
 
-```
+```shell
 make test
 ```
 
 ## Run
 
-```
+```shell
 make run
 ```
 
@@ -36,7 +32,7 @@ The following APIs are exposed by this service.
 
 1. Create `Data`
 
-```
+```shell
 curl --request POST \
   --url http://localhost:8080/v1/data \
   --header 'Content-Type: application/json' \
@@ -45,12 +41,11 @@ curl --request POST \
 
 2. Fetch `Data`
 
-```
+```shell
 curl --request GET \
   --url http://localhost:8080/v1/data?title=my_title \
   --header 'Content-Type: application/json'
 ```
-
 
 ## Caveats
 
